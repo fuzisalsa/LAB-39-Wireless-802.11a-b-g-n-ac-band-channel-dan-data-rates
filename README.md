@@ -1,0 +1,1 @@
+# LAB-39-Wireless-802.11a-b-g-n-ac-band-channel-data-rates-
