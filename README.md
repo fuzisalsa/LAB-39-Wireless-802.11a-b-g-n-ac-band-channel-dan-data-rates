@@ -32,9 +32,9 @@ Band adalah rentang frekuensi kerja yang digunakan perangkat wireless untuk mela
 # konfigurasi band dan frekuensi di mikrotik
 1. wireless > > wifi interface > klik (wlan1) > pilih tab wireless, pilih band dan frequency
 
-![m]()
+![m](9.png)
 
-![m]()
+![m](999.png)
 
 # channel
 Channel adalah jalur komunikasi berupa segmen frekuensi radio tertentu yang digunakan oleh perangkat nirkabel (seperti router, laptop, atau smartphone) untuk mengirim dan menerima data dalam pita frekuensi tertentu seperti 2.4 GHz, atau 5 GHz. Channel bekerja pada lapisan fisik (Physical Layer) dalam model OSI, karena berkaitan langsung dengan gelombang elektromagnetik yang digunakan untuk membawa data antar perangkat. Channel juga merupakan bagian dari sistem multiple access dalam jaringan wireless, yang memungkinkan banyak perangkat menggunakan medium udara secara efisien tanpa saling mengganggu.
@@ -42,6 +42,27 @@ Channel adalah jalur komunikasi berupa segmen frekuensi radio tertentu yang digu
 **2.4 GHz**
 Band 2.4 GHz adalah salah satu pita frekuensi yang digunakan dalam jaringan Wi-Fi (wireless LAN), tepatnya dalam rentang 2.400 hingga 2.4835 GHz. Terdapat 14 channel di pita 2.4 GHz, masing-masing berjarak 5 MHz, tetapi lebar setiap channel adalah 20 MHz, sehingga channel-channel ini saling tumpang tindih (overlap). Supaya tidak overlap, gunakan channel dengan jarak jauh. 
 
-**2.5 GHz**
+**5 GHz**
+5 GHz punya jumlah lebih dari 25 channel, rentangnya 5.150-5.825 MHz. Jarak antar channel lebih lebar jadi minim overlap. Pembagian channelnya,
+
+UNII-1 (36-48 / 5.180-5.240)  
+Bebas pakai indoor, tidak perlu DFS.  
+UNII-2 (52-140 / 5.260-5.700)  
+Wajib DFS (Dynamic Frequency Selection), AP harus cek dulu apakah ada radar, CAC (Channel availability check) delay 60 detik.  
+UNII-3 (149-165 / 5.745-5.825 GHz) Bisa dipakai indoor, tidak perlu DFS. Kelebihannya Banyak channel, lebih fleksibel, hampir tidak ada overlap, bisa pakai channel width besar (40/80/160 MHz). Kekurangannya adalah jangkauannya pendek, mudah terhalang tembok, perangkatlama tidak support.
+
+# Channel Width
+  Channel width atau lebar jalur adalah seberapa lebar jalur frekuensi yang dipakai.
+
+20 MHz, standar, stabil, cocok area padat.
+40 MHz, Gabungan antara 2 channel, lebih cepat lebih dan mudah tabrakan.
+80 MHz, dipakai di WiFi 5, sangat cepat.
+160 MHz, dipakai di WiFi 6, throughput tinggi, tapi butuh channel kosong.
+
+# Konfigurasi Channel pada Mikrotik
+  Kita dapat melakukan konfigurasi channel di MikroTik pada wireless > WiFi intrface > pilih interface (wlan1) > Wireless
+
+![M](99.png)
+
 # sumber
 https://citraweb.com/artikel_lihat.php?id=70
