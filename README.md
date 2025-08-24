@@ -64,5 +64,30 @@ Wajib DFS (Dynamic Frequency Selection), AP harus cek dulu apakah ada radar, CAC
 
 ![M](99.png)
 
+# data rate      
+Data rate adalah kecepatan maksimum yang bisa dicapai dalam transmisi data wireless antara AP dan Client. Data rate ditentukan oleh standar WiFi yang digunakan (misalnya 802.11b/g/n/ac/ax), lebar channel (20/40/80/160 MHz) dan jumlah antena/spartial stream (1x1, 2x2, dst).
+
+**Perbedaan data rate teori dan nyata.**
+
+data rate teori Kecepatan maksimum transfer data yang dapat dicapai secara teori berdasarkan spesifikasi teknologi wireless, seperti Wi-Fi (IEEE 802.11), dalam kondisi ideal. Dihitung dari modulasi, lebar pita (bandwidth), jumlah antena (MIMO), dan standar yang digunakan. Tidak mempertimbangkan gangguan atau kondisi lingkungan. Biasanya disebutkan dalam brosur atau iklan perangkat. sedangkan data rate nyata Kecepatan transfer data yang benar-benar dialami oleh pengguna dalam penggunaan sehari-hari sepert
+Interferensi sinyal (dari dinding, perangkat lain), Jarak dari access point (semakin jauh = semakin lambat), dan Jumlah perangkat yang terhubung.
+
+
+**Faktor yang membuat Data rate lebih rendah**
+
+Channel width, semakin lebar, semakin cepat tapi semakin mudah terganggu interferensi., kalau banyak device terkoneksi ke AP, bandwidth dibagi rata, throughput semakin turun.
+Kualitas sinyal, kalau sinyal lemah, noise tinggi, modulasi otomatis turun ke level rendah.
+
+# Pembahasan
+
+Interferensi  
+Interferensi adalah gangguan pada sinyal komunikasi yang terjadi ketika dua atau lebih sinyal saling tumpang tindih, sehingga menyebabkan penurunan kualitas sinyal atau hilangnya data. Dampak Interferensi, Sinyal lemah atau tidak stabil walau dekat, KEcepatan internet turun drastis.
+
+Overlap   
+Overlap adalah ketika dua channel berbagi sebagian frekuensi yang sama, akibatnya sinyal bisa saling terganggu. Cohtohnya channel 2 (2.417 GHz) dan Channel 3 (2.422 GHz) saling overlap jadi client yang connect bisa mengalami interferensi.
+# kesimpulan 
+
+Data rate adalah kecepatan transfer data antara perangkat dalam satuan bit per detik (bps). Dalam jaringan wireless, data rate sangat dipengaruhi oleh berbagai faktor dan dapat dibedakan menjadi dua jenis utama yaitu teoritis dan nyata.
+
 # sumber
 https://citraweb.com/artikel_lihat.php?id=70
